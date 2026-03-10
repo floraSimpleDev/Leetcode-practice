@@ -3,14 +3,9 @@
  * @return {Promise}
  */
 async function sleep(millis) {
-    try {
-        return await new Promise((resolve, reject) => {
-            setTimeout(resolve, millis);
-        })
-    }
-    catch (error) {
-        reject(error);
-    }
+    await new Promise(resolve => {
+        setTimeout(resolve, millis);
+    })
 }
 
 /** 
