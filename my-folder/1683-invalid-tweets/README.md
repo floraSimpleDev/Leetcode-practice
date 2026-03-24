@@ -1,40 +1,54 @@
-Table: Tweets
+## Invalid Tweets
 
-+----------------+---------+
-| Column Name    | Type    |
-+----------------+---------+
-| tweet_id       | int     |
-| content        | varchar |
-+----------------+---------+
-tweet_id is the primary key (column with unique values) for this table.
-content consists of alphanumeric characters, '!', or ' ' and no other special characters.
-This table contains all the tweets in a social media app.
- 
+### Table: Tweets
 
-Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
+| Column Name | Type    |
+|------------|---------|
+| tweet_id   | int     |
+| content    | varchar |
 
-Return the result table in any order.
+- `tweet_id` is the primary key (unique values).
+- `content` consists of alphanumeric characters, `'!'`, or `' '` (space), and no other special characters.
+- This table contains all tweets in a social media app.
 
-The result format is in the following example.
+---
 
- 
+## Problem
 
-Example 1:
+Write a solution to find the IDs of the **invalid tweets**.
 
-Input: 
+A tweet is considered invalid if the number of characters in `content` is **strictly greater than 15**.
+
+Return the result table in **any order**.
+
+---
+
+## Example 1
+
+**Input**
+
 Tweets table:
+
+
 +----------+-----------------------------------+
-| tweet_id | content                           |
+| tweet_id | content |
 +----------+-----------------------------------+
-| 1        | Let us Code                       |
-| 2        | More than fifteen chars are here! |
+| 1 | Let us Code |
+| 2 | More than fifteen chars are here! |
 +----------+-----------------------------------+
-Output: 
+
+
+**Output**
+
+
 +----------+
 | tweet_id |
 +----------+
-| 2        |
+| 2 |
 +----------+
-Explanation: 
-Tweet 1 has length = 11. It is a valid tweet.
-Tweet 2 has length = 33. It is an invalid tweet.
+
+
+**Explanation**
+
+- Tweet `1` has length = 11 → valid  
+- Tweet `2` has length = 33 → invalid
