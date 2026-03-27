@@ -1,4 +1,4 @@
-// Last updated: 27/03/2026, 22:26:56
+// Last updated: 27/03/2026, 22:30:08
 1/**
 2 * @param {number[]} prices
 3 * @return {number}
@@ -11,11 +11,9 @@
 10        if (price < minPrice) {
 11            minPrice = price;
 12        }
-13        /* else if (price - minPrice > maxProfit) {
-14            maxProfit = price - minPrice;
-15        } */
-16        maxProfit = Math.max(maxProfit, price - minPrice)
-17    }
-18
-19    return maxProfit;
-20};
+13        
+14        maxProfit = Math.max(maxProfit, price - minPrice)
+15    }
+16
+17    return maxProfit;
+18};
