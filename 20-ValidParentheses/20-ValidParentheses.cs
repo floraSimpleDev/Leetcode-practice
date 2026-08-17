@@ -1,4 +1,4 @@
-// Last updated: 17/08/2026, 17:34:42
+// Last updated: 17/08/2026, 17:34:46
 1public class Solution {
 2    private Dictionary<char, char> brackets;
 3
